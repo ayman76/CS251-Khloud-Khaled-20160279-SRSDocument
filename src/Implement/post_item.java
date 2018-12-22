@@ -1,4 +1,5 @@
-package Found_IT;
+package Implement;
+
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -41,10 +42,13 @@ public class post_item extends Item_Database {
 				for(int i=0;i<num_of_question;i++)
 				{
 					System.out.println("enter sequrity question of lost item number " + (i+1));
-					security.addElement(s.nextLine());
+					String ss=s.nextLine();
+					security.addElement(ss);
 					
 					System.out.println("enter show sequrity question of lost item" + (i+1));
-					show_security.addElement(s.nextLine());
+					String sss=s.nextLine();
+
+					show_security.addElement(sss);
 
 					
 				}
