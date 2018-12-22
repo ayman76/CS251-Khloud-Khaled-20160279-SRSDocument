@@ -26,11 +26,11 @@ public class Search_For_Item {
          System.out.print("You can take it ");
      }
      public static boolean Answer_security_Questions(Vector<String>Sec_quest,Vector<String>Answers)
-       {  Scanner in=Scanner(System.in);
+       {  Scanner input=new Scanner(System.in);
           boolean P=true;
            Vector<String>User_Answer=new Vector<>();
           for(int i=0;i<Sec_quest.size();i++)
-          { String Put_answer=in.nextLine();
+          { String Put_answer=input.nextLine();
             User_Answer.add(Put_answer);
           
           }    
@@ -43,7 +43,7 @@ public class Search_For_Item {
            
      return false;}
      
-     }
+     {
 
 
 

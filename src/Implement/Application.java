@@ -123,7 +123,7 @@ public class Application {
                     afterLoginChoice = input.nextInt();
                     if (afterLoginChoice == 1)
                     {
-                        PostItem p = new PostItem();
+                    	post_item p = new post_item();
                         p.Post_item();
                     }
                     else if (afterLoginChoice == 2)
