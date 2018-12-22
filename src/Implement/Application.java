@@ -115,6 +115,32 @@ public class Application {
                     password = input.nextLine();
                 }
 
+                int afterLoginChoice;
+                while (true) {
+                    System.out.println("1- Post Item");
+                    System.out.println("2- Search for Item");
+                    System.out.println("0- LogOut");
+                    afterLoginChoice = input.nextInt();
+                    if (afterLoginChoice == 1)
+                    {
+                        PostItem p = new PostItem();
+                        p.Post_item();
+                    }
+                    else if (afterLoginChoice == 2)
+                    {
+
+                    }
+                    else if (afterLoginChoice == 0)
+                    {
+                        System.out.println(userName + " is Logged Out");
+                        break;
+                    }
+                    else
+                    {
+                        System.out.println("InValid Input");
+                    }
+                }
+
 
             } else if (choice == 2) {
                 String userName, password, name, location, gender, email, phoneNum;
