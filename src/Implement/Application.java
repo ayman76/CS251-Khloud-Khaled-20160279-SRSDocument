@@ -8,8 +8,51 @@ import java.util.Scanner;
 import java.util.Vector;
 
 public class Application {
+
+    public void putStreamInVectors(Vector<Vector<String>>content, Vector<String>content1)
+    {
+        int counter = 0;
+        for(int x = 0 ; x < content1.size(); x++) {
+            Vector<String> userInfo = new Vector<>();
+            for (int i = 0; i < content1.elementAt(x).length(); i++) {
+                String y = "";
+                if (content1.elementAt(x).charAt(i) == ':') {
+                    for (int j = i + 1; j < content1.elementAt(x).length(); j++) {
+                        if (content1.elementAt(x).charAt(j) == '|') {
+                            userInfo.add(y);
+                            break;
+                        }
+                        y += content1.elementAt(x).charAt(j);
+                        i++;
+                    }
+                }
+
+            }
+            content.add(userInfo);
+        }
+    }
+
     public static void main(String[] args) {
 
+        Application  app = new Application();
+        Vector<String> content1 =new Vector<>();
+        try {
+            BufferedReader f = new BufferedReader(new FileReader("User.txt"));
+            String line;
+
+            while ((line = f.readLine()) != null)
+            {
+                content1.add(line);
+            }
+            f.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Vector<Vector<String>> content = new Vector<>();
+
+        app.putStreamInVectors(content, content1);
 
         UserServices userServices = new UserServices();
         Vector<User> users = new Vector<>();
