@@ -96,7 +96,8 @@ public class Application {
                 userServices.signUp(users, userName, password, name, age, location, gender, email, phoneNum);
 
             } else if (choice == 0) {
-
+                System.out.println("Thanks for Using Found IT Program :)");
+                break;
             }
         }
     }
