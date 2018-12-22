@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f40717c2-4bb8-47af-a40d-a9bdc7245416" name="Default Changelist" comment="" />
+    <list default="true" id="f40717c2-4bb8-47af-a40d-a9bdc7245416" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Implement/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Implement/Application.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +48,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Implement/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="483">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Implement/UserServices.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2185">
+              <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -89,22 +103,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Implemention" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Implemention" type="462c0819:PsiDirectoryNode" />
+              <item name="CS251-Khloud-Khaled-20160279-SRSDocument" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS251-Khloud-Khaled-20160279-SRSDocument" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Implemention" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Implemention" type="462c0819:PsiDirectoryNode" />
+              <item name="CS251-Khloud-Khaled-20160279-SRSDocument" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS251-Khloud-Khaled-20160279-SRSDocument" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Implemention" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Implemention" type="462c0819:PsiDirectoryNode" />
+              <item name="CS251-Khloud-Khaled-20160279-SRSDocument" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS251-Khloud-Khaled-20160279-SRSDocument" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Implement" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -112,13 +127,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545419671320" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545512073250" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -151,13 +165,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2061000" />
+    <option name="totallyTimeSpent" value="2095000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25642964" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2602118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -198,8 +211,11 @@
     <entry file="file://$PROJECT_DIR$/src/Implement/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/Implement/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="483">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
