@@ -12,6 +12,7 @@ public class Application {
 
 
         UserServices userServices = new UserServices();
+        Vector<User> users = new Vector<>();
         Scanner input = new Scanner(System.in);
         int choice;
 
@@ -31,8 +32,7 @@ public class Application {
                 System.out.print("Password: ");
                 password = input.nextLine();
 
-                while(!userServices.logIn(users, userName, password))
-                {
+                while (!userServices.logIn(users, userName, password)) {
                     System.out.print("UserName: ");
                     userName = input.nextLine();
                     System.out.print("Password: ");
@@ -40,9 +40,60 @@ public class Application {
                 }
 
 
-
             } else if (choice == 2) {
+                String userName, password, name, location, gender, email, phoneNum;
+                int age;
+                input.nextLine();
+                System.out.print("Name: ");
+                name = input.nextLine();
+                System.out.print("Age: ");
+                age = input.nextInt();
+                input.nextLine();
+                System.out.print("Location: ");
+                location = input.nextLine();
+                System.out.print("Gender: ");
+                gender = input.nextLine();
+                System.out.print("Email: ");
+                email = input.nextLine();
+                while (!userServices.checkEmail(users, email)) {
+                    System.out.print("email: ");
+                    email = input.nextLine();
+                }
+                System.out.print("Phone Number: ");
+                phoneNum = input.nextLine();
+                while (!userServices.checkPhoneNumber(users, phoneNum)) {
+                    System.out.print("Phone Number: ");
+                    phoneNum = input.nextLine();
+                }
+                System.out.print("UserName: ");
+                userName = input.nextLine();
+                while (!userServices.checkUserName(users, userName)) {
+                    System.out.print("UserName: ");
+                    userName = input.nextLine();
+                }
+                System.out.print("Password: ");
+                password = input.nextLine();
+                while (!userServices.checkPassword(password)) {
+                    System.out.print("Password: ");
+                    password = input.nextLine();
+                }
 
+
+                String info = ("Name:" + name + "|Age:" + age + "|Locaion:" + location + "|Gender:" + gender + "|Email:" +
+                        email + "|Phone Number: " + phoneNum + "|UserName:" + userName + "|Password:" + password + "|\n");
+                System.out.println(info);
+//                for (int i = 0; i < password.length(); i++)
+//                    System.out.print("*");
+                try (FileWriter usersToFile = new FileWriter("User.txt", true)) {
+                    usersToFile.write(info);
+
+                    usersToFile.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                System.out.println();
+                userServices.signUp(users, userName, password, name, age, location, gender, email, phoneNum);
 
             } else if (choice == 0) {
 
