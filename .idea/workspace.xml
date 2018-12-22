@@ -40,14 +40,85 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-125515621">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Implement/Application.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Implement/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+              <folding>
+                <element signature="e#281#282#0" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#348#349#0" expanded="true" />
+                <element signature="e#375#376#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#602#603#0" expanded="true" />
+                <element signature="e#637#638#0" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
+                <element signature="e#699#700#0" expanded="true" />
+                <element signature="e#743#744#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#806#807#0" expanded="true" />
+                <element signature="e#834#835#0" expanded="true" />
+                <element signature="e#876#877#0" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#940#941#0" expanded="true" />
+                <element signature="e#971#972#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#1054#1055#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
+                <element signature="e#1120#1121#0" expanded="true" />
+                <element signature="e#1168#1169#0" expanded="true" />
+                <element signature="e#1203#1204#0" expanded="true" />
+                <element signature="e#1238#1239#0" expanded="true" />
+                <element signature="e#1269#1270#0" expanded="true" />
+                <element signature="e#1317#1318#0" expanded="true" />
+                <element signature="e#1352#1353#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,9 +138,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Implement/User.java" />
         <option value="$PROJECT_DIR$/src/Implement/Item.java" />
         <option value="$PROJECT_DIR$/src/Implement/Application.java" />
+        <option value="$PROJECT_DIR$/src/Implement/User.java" />
       </list>
     </option>
   </component>
@@ -89,22 +160,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Implemention" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Implemention" type="462c0819:PsiDirectoryNode" />
+              <item name="CS251-Khloud-Khaled-20160279-SRSDocument" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS251-Khloud-Khaled-20160279-SRSDocument" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Implemention" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Implemention" type="462c0819:PsiDirectoryNode" />
+              <item name="CS251-Khloud-Khaled-20160279-SRSDocument" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS251-Khloud-Khaled-20160279-SRSDocument" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Implemention" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Implemention" type="462c0819:PsiDirectoryNode" />
+              <item name="CS251-Khloud-Khaled-20160279-SRSDocument" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS251-Khloud-Khaled-20160279-SRSDocument" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Implement" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -112,13 +184,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545419671320" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545508315072" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -147,17 +218,18 @@
       <updated>1545412817697</updated>
       <workItem from="1545412821452" duration="2002000" />
       <workItem from="1545505843674" duration="59000" />
+      <workItem from="1545508289599" duration="26000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2061000" />
+    <option name="totallyTimeSpent" value="2087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25642964" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2602118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -193,13 +265,53 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Implement/User.java" />
     <entry file="file://$PROJECT_DIR$/src/Implement/Item.java" />
     <entry file="file://$PROJECT_DIR$/src/Implement/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/Implement/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Implement/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1238#1239#0" expanded="true" />
+            <element signature="e#1269#1270#0" expanded="true" />
+            <element signature="e#1317#1318#0" expanded="true" />
+            <element signature="e#1352#1353#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
