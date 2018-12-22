@@ -32,6 +32,37 @@ public class Application {
         }
     }
 
+    public void putinfoToUsers(Vector<User>users, Vector<Vector<String>>content)
+    {
+        for(int i = 0; i < content.size(); i++)
+        {
+            User user1 = new User();
+            for(int j = 0; j< content.elementAt(i).size(); j++)
+            {
+                if(j == 0)
+                    user1.setName(content.elementAt(i).elementAt(j));
+                else if(j == 1) {
+                    String num = content.elementAt(i).elementAt(j);
+                    user1.setAge(Integer.parseInt(num));
+                }
+                else if(j == 2)
+                    user1.setLocation(content.elementAt(i).elementAt(j));
+                else if(j == 3)
+                    user1.setGender(content.elementAt(i).elementAt(j));
+                else if(j == 4)
+                    user1.setEmail(content.elementAt(i).elementAt(j));
+                else if(j == 5)
+                    user1.setPhoneNum(content.elementAt(i).elementAt(j));
+                else if(j == 6)
+                    user1.setUserName(content.elementAt(i).elementAt(j));
+                else if(j == 7)
+                    user1.setPassword(content.elementAt(i).elementAt(j));
+
+            }
+            users.add(user1);
+        }
+    }
+
     public static void main(String[] args) {
 
         Application  app = new Application();
@@ -56,6 +87,8 @@ public class Application {
 
         UserServices userServices = new UserServices();
         Vector<User> users = new Vector<>();
+        app.putinfoToUsers(users, content);
+
         Scanner input = new Scanner(System.in);
         int choice;
 
