@@ -9,10 +9,9 @@ import java.util.Vector;
 
 public class Application {
 
-    public void putStreamInVectors(Vector<Vector<String>>content, Vector<String>content1)
-    {
+    public void putStreamInVectors(Vector<Vector<String>> content, Vector<String> content1) {
         int counter = 0;
-        for(int x = 0 ; x < content1.size(); x++) {
+        for (int x = 0; x < content1.size(); x++) {
             Vector<String> userInfo = new Vector<>();
             for (int i = 0; i < content1.elementAt(x).length(); i++) {
                 String y = "";
@@ -32,30 +31,26 @@ public class Application {
         }
     }
 
-    public void putinfoToUsers(Vector<User>users, Vector<Vector<String>>content)
-    {
-        for(int i = 0; i < content.size(); i++)
-        {
+    public void putinfoToUsers(Vector<User> users, Vector<Vector<String>> content) {
+        for (int i = 0; i < content.size(); i++) {
             User user1 = new User();
-            for(int j = 0; j< content.elementAt(i).size(); j++)
-            {
-                if(j == 0)
+            for (int j = 0; j < content.elementAt(i).size(); j++) {
+                if (j == 0)
                     user1.setName(content.elementAt(i).elementAt(j));
-                else if(j == 1) {
+                else if (j == 1) {
                     String num = content.elementAt(i).elementAt(j);
                     user1.setAge(Integer.parseInt(num));
-                }
-                else if(j == 2)
+                } else if (j == 2)
                     user1.setLocation(content.elementAt(i).elementAt(j));
-                else if(j == 3)
+                else if (j == 3)
                     user1.setGender(content.elementAt(i).elementAt(j));
-                else if(j == 4)
+                else if (j == 4)
                     user1.setEmail(content.elementAt(i).elementAt(j));
-                else if(j == 5)
+                else if (j == 5)
                     user1.setPhoneNum(content.elementAt(i).elementAt(j));
-                else if(j == 6)
+                else if (j == 6)
                     user1.setUserName(content.elementAt(i).elementAt(j));
-                else if(j == 7)
+                else if (j == 7)
                     user1.setPassword(content.elementAt(i).elementAt(j));
 
             }
@@ -64,15 +59,25 @@ public class Application {
     }
 
     public static void main(String[] args) {
+        Vector<String> K = new Vector<String>();
+        Vector<String> answer = new Vector<String>();
+        Vector<String> categories = new Vector<>();
+        categories.add("Mobile Phones & Accessories");
+        categories.add("Electronic & Home Applications");
+        categories.add("clothe & Accessories");
+        categories.add("Pets");
+        categories.add("Sproting goods");
+        categories.add("Others");
+        Item_Database s1 = new Item_Database();
+        s1.Set_elemnt(categories);
 
-        Application  app = new Application();
-        Vector<String> content1 =new Vector<>();
+        Application app = new Application();
+        Vector<String> content1 = new Vector<>();
         try {
             BufferedReader f = new BufferedReader(new FileReader("User.txt"));
             String line;
 
-            while ((line = f.readLine()) != null)
-            {
+            while ((line = f.readLine()) != null) {
                 content1.add(line);
             }
             f.close();
@@ -91,6 +96,8 @@ public class Application {
 
         Scanner input = new Scanner(System.in);
         int choice;
+
+        Item_Database x = new Item_Database();
 
         System.out.println("\t\t\t\t\t\t\t\t\tWelcome to Found IT Program\n\n");
 
@@ -121,22 +128,34 @@ public class Application {
                     System.out.println("2- Search for Item");
                     System.out.println("0- LogOut");
                     afterLoginChoice = input.nextInt();
-                    if (afterLoginChoice == 1)
-                    {
-                    	post_item p = new post_item();
-                        p.Post_item();
-                    }
-                    else if (afterLoginChoice == 2)
-                    {
+                    if (afterLoginChoice == 1) {
+                        post_item p = new post_item();
+                        p.Post_item(x);
+                    } else if (afterLoginChoice == 2) {
+                        Item_Database l1 = new Item_Database();
+                        l1.Set_elemnt(categories);
+                        Search_For_Item s = new Search_For_Item();
+                        String cat = s.Select_category();
+                        if (l1.Check_cat(categories, cat)) {
+                            Vector<String> PhoneNum = new Vector<>();
+                            s.Search_For_Item(K, answer, x, PhoneNum, cat);
+                            post_item p = new post_item();
+                            p.show_answer(K);
 
-                    }
-                    else if (afterLoginChoice == 0)
-                    {
+                            if ((s.Answer_security_Questions(answer))) {
+                                s.Verify_person(true);
+                                System.out.println("Phone Number: " + PhoneNum);
+                            }
+                            else
+                                s.Verify_person(false);
+
+                        }
+
+
+                    } else if (afterLoginChoice == 0) {
                         System.out.println(userName + " is Logged Out");
                         break;
-                    }
-                    else
-                    {
+                    } else {
                         System.out.println("InValid Input");
                     }
                 }

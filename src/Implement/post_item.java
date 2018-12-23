@@ -13,63 +13,45 @@ public class post_item extends Item_Database {
 	static String des;
 	static String category;
 	static String user_Name;
-    static Vector<String> security;
-    static Vector<String> show_security;
+	static String phoneNum;
+    static String security;
+    static String show_security;
     
-	public void Post_item() 
+	public void Post_item(Item_Database x) 
 	{
+		Item l=new Item();
 		Scanner s=new Scanner(System.in);
-		System.out.println("enter number of posts");
+		System.out.println("enter the user name: ");
+		 user_Name=s.nextLine();
 
-		int num_of_posts=s.nextInt();
-		
-		System.out.println("enter the user name");
-		user_Name=s.nextLine();
-		
-		System.out.println("enter the name of lost item");
+		System.out.println("enter the Phone Number: ");
+		phoneNum =s.nextLine();
+
+		System.out.println("enter the name of lost item: ");
 		item_Name=s.nextLine();
 		
 		
-	   System.out.println("enter description of lost item");
+	   System.out.println("enter description of lost item: ");
 			des=s.nextLine();
 			
-		System.out.println("enter category of lost item");
+		System.out.println("enter category of lost item: ");
 				category=s.nextLine();
-			
-				System.out.println("enter number of sequrity question of lost item");
-				int num_of_question=s.nextInt();
-
-				for(int i=0;i<num_of_question;i++)
-				{
-					System.out.println("enter sequrity question of lost item number " + (i+1));
-					String ss=s.nextLine();
-					security.addElement(ss);
-					
-					System.out.println("enter show sequrity question of lost item" + (i+1));
-					String sss=s.nextLine();
-
-					show_security.addElement(sss);
-
-					
-				}
+				
+		System.out.println("enter sequrity question of lost item: ");
+		security=s.nextLine();
 		
+		System.out.println("enter answer sequrity question of lost item");
+		show_security=s.nextLine();
 		
-		
-		 
-		for(int i=0;i<num_of_posts;i++)
-		{
-			this.Data.elementAt(i).User_name=user_Name;
-			this.Data.elementAt(i).item_name=item_Name;
-			this.Data.elementAt(i).Description=des;
-			this.Data.elementAt(i).Category=category;
-			this.Data.elementAt(i).security=security;
-
-			this.Data.elementAt(i).show_security=show_security;
-			
-			
-
-		}
-		 
+		l.User_name=user_Name;
+		l.PhoneNum = phoneNum;
+		l.Category=category;
+		l.Description=des;
+		l.security=security;
+		l.show_security=show_security;
+		l.item_name=item_Name;
+		this.save(x,l);
+		this.view(x,l);
 	}
 
 
@@ -106,7 +88,7 @@ public class post_item extends Item_Database {
 	
 	public static void sequrity_question(String squre)
 	{
-		squre=security.elementAt(0);
+		//squre=security.elementAt(0);
 	}
 	
 	public void check()
@@ -129,11 +111,11 @@ public class post_item extends Item_Database {
 		
 
 	}
-	public void show_answer()
+	public void show_answer(Vector<String>ques)
 	{
-		for(int i=0;i<security.size();i++)
+		for(int i=0;i<ques.size();i++)
 		{
-			System.out.println("sequrity question number "+ i + security.elementAt(i));
+			System.out.println("squrity number "+ (i+1) + "-  "+ques.elementAt(i));
 		}
 	}
 	
